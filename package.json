@@ -1,0 +1,16 @@
+{
+  "name": "parallel-image-references",
+  "version": "0.1.0",
+  "description": "Codex skill for parallel Douyin/Xiaohongshu social image generation and review.",
+  "bin": {
+    "parallel-image-references": "bin/install.js"
+  },
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "agents",
+    "assets",
+    "bin"
+  ],
+  "license": "MIT"
+}

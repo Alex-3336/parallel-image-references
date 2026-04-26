@@ -60,14 +60,26 @@
 
 ## 安装
 
-### 方式一：手动安装
+### 方式一：一行命令安装
+
+```bash
+npx github:Alex-3336/parallel-image-references
+```
+
+这会把 skill 安装到：
+
+```text
+~/.codex/skills/parallel-image-references
+```
+
+### 方式二：手动安装
 
 ```bash
 mkdir -p ~/.codex/skills
 git clone https://github.com/Alex-3336/parallel-image-references.git ~/.codex/skills/parallel-image-references
 ```
 
-### 方式二：更新已有版本
+### 方式三：更新已有版本
 
 ```bash
 cd ~/.codex/skills/parallel-image-references
@@ -81,15 +93,12 @@ rm -rf ~/.codex/skills/parallel-image-references
 git clone https://github.com/Alex-3336/parallel-image-references.git ~/.codex/skills/parallel-image-references
 ```
 
-### 方式三：把这段话发给 Codex
+### 方式四：把这段话发给 Codex
 
 ```text
 帮我安装 parallel-image-references 这个 Codex skill。
-请执行：
-1. 确保 ~/.codex/skills 存在
-2. clone https://github.com/Alex-3336/parallel-image-references 到 ~/.codex/skills/parallel-image-references
-3. 验证目录里有 SKILL.md 和 agents/openai.yaml
-4. 告诉我安装完成
+请执行 npx github:Alex-3336/parallel-image-references。
+完成后验证 ~/.codex/skills/parallel-image-references 里有 SKILL.md 和 agents/openai.yaml。
 ```
 
 ## 触发方式
@@ -207,6 +216,9 @@ image_references/<主题>-<时间>/
 parallel-image-references/
 ├── SKILL.md
 ├── README.md
+├── package.json
+├── bin/
+│   └── install.js
 ├── agents/
 │   └── openai.yaml
 └── assets/
