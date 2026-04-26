@@ -1,0 +1,4 @@
+interface:
+  display_name: "Social Image References"
+  short_description: "Generate reviewed Douyin/Xiaohongshu image options"
+  default_prompt: "Use $parallel-image-references to generate multiple Douyin/Xiaohongshu viral-copy image candidates and review them for selection."
