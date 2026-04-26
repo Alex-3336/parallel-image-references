@@ -6,6 +6,18 @@
 
 ![Parallel Image References 效果展示](assets/skill-intro-collage.png)
 
+## 示例候选图
+
+同一个主题可以一次生成多张不同方向的封面图，再由 Codex 自动审阅和打分。
+
+| A1 痛点钩子 | A2 清单干货 | B1 好奇钩子 |
+| --- | --- | --- |
+| ![A1 痛点钩子](assets/examples/candidate-a1.png) | ![A2 清单干货](assets/examples/candidate-a2.png) | ![B1 好奇钩子](assets/examples/candidate-b1.png) |
+
+| B2 收藏型 | C1 可信清单 | C2 报告感 |
+| --- | --- | --- |
+| ![B2 收藏型](assets/examples/candidate-b2.png) | ![C1 可信清单](assets/examples/candidate-c1.png) | ![C2 报告感](assets/examples/candidate-c2.png) |
+
 ## 效果
 
 - 一次生成 6 张社媒封面候选图
@@ -198,7 +210,14 @@ parallel-image-references/
 ├── agents/
 │   └── openai.yaml
 └── assets/
-    └── skill-intro-collage.png
+    ├── skill-intro-collage.png
+    └── examples/
+        ├── candidate-a1.png
+        ├── candidate-a2.png
+        ├── candidate-b1.png
+        ├── candidate-b2.png
+        ├── candidate-c1.png
+        └── candidate-c2.png
 ```
 
 ## License
